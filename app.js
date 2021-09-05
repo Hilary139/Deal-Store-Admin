@@ -7,6 +7,7 @@ const appController = require("./controllers/appController");
 const isAuth = require("./middleware/is-auth");
 const connectDB = require("./config/db");
 const mongoURI = config.get("mongoURI");
+const PORT = 5000 || process.env.PORT;
 
 const app = express();
 connectDB();
@@ -45,4 +46,4 @@ app.get("/dashboard", isAuth, appController.dashboard_get);
 
 app.post("/logout", appController.logout_post);
 
-app.listen(5000, console.log("App Running on http://localhost:5000"));
+app.listen(PORT, console.log("App Running on http://localhost:5000"));

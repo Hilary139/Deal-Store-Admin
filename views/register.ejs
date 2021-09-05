@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register | Node Auth</title>
+    <title>DEAL STORE | Register
+
+    </title>
     <style>
+      body{
+        background-image: linear-gradient(450deg, rgb(180, 255, 180), white);
+      }
+
       .login-form {
         width: 400px;
         height: 400px;
-        margin: 1rem auto;
+        margin: 10% auto;
       }
+      
 
       .input-group {
         width: 100%;
@@ -17,12 +24,18 @@
 
       .input-group label {
         display: block;
+        margin-top: 5px;
+        font-size: 20px;
       }
 
-      .input-group input {
-        width: 100%;
+      input{
+        border-radius: 10px;
+        width: 80%;
+        height: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 5px 10px #888888;
       }
-
       button {
         padding: 10px 17px;
         margin-top: 1rem;
@@ -30,7 +43,34 @@
         background: #eee;
         border: 1px solid #333;
         cursor: pointer;
+        margin-bottom: 5px;
+        border-radius: 5px;
       }
+
+      button:hover{
+        background-color: rgb(89, 230, 89);
+      }
+
+      h3{
+        font-size: 35px;
+        color: rgb(89, 230, 89);
+      }
+
+
+
+
+@media (max-width: 800px){
+  body{
+    background-image: linear-gradient(450deg, rgb(180, 255, 180), white);
+  }
+
+  .login-form {
+        margin: 30% auto;
+        margin-left: 25px;
+      }
+
+}
+
     </style>
   </head>
   <body>
@@ -39,22 +79,30 @@
       <p style="color: red;"><%= err %></p>
       <% } %>
       <h3>Register Page</h3>
+
       <form action="/register" method="POST">
+
         <div class="input-group">
           <label for="username">Username:</label>
-          <input type="text" name="username" />
+          <input type="text" placeholder=" Username" name="username" required />
         </div>
+
         <div class="input-group">
           <label for="email">Email:</label>
-          <input type="email" name="email" />
+          <input type="email" placeholder=" Email" name="email" required />
         </div>
+
         <div class="input-group">
           <label for="password">Password:</label>
-          <input type="password" name="password" />
+          <input type="password" placeholder=" Password" name="password" required />
         </div>
+
         <button>Register</button>
+
       </form>
+       Already Have An Account? 
       <a href="/login">Login</a>
+
     </div>
   </body>
 </html>

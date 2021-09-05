@@ -1,3 +1,3 @@
 {
-  "mongoURI": "mongodb://localhost:27017/sessions"
+  "mongoURI": "mongodb+srv://DealStoreAdmin:1234567890@dealstoreusers.y3cic.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }

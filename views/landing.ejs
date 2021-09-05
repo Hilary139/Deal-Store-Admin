@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing | Node Auth</title>
+    <title>DEALSTORE | Admin</title>
     <style>
+      /*
       .nav {
         display: flex;
       }
@@ -20,9 +21,117 @@
         text-decoration: none;
         background: coral;
       }
+      */
+
+
+/*heading style*/
+    body{
+      padding: 0;
+      text-transform: capitalize;
+      background-image: linear-gradient(450deg, rgb(180, 255, 180), white);
+      background-size: cover;
+    }
+
+    .wrapper{
+      text-align: center;
+      margin: auto 13%;
+    }
+
+    h1{
+      color: rgb(89, 230, 89);
+    }
+
+    .cover{
+      margin: 13% auto;
+    }
+    
+    .content{
+      font-size: 20px;
+    }
+   
+    .btn-btn{
+      border-radius:10px;
+      width: 30%;
+      height: 40px;
+      background-color: rgb(89, 230, 89);
+    
+       
+    }
+
+    .btn-btn:hover{
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+    
+    a{
+      text-decoration:none;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+    }
+
+
+
+@media (max-width: 800px){
+    body{
+      background-image: linear-gradient(450deg, rgb(180, 255, 180), white);
+        background-size: cover;
+    }
+    .wrapper{
+      margin: auto 8%;
+      margin-top: 25%;
+    }
+
+    h1{
+      font-size: 25px;
+
+    }
+    .btn-btn{
+      border-radius:10px;
+      width: 60%;
+      height: 40px;
+      font-size: 10px;
+    }
+
+    .btn-btn:hover{
+      background-color: rgb(89, 230, 89);
+      color: black;
+    }
+    
+    a{
+      text-decoration:none;
+      color: black;
+      font-size: 15px;
+    }
+  }
     </style>
   </head>
   <body>
+    
+
+       <div class="wrapper">
+         <div class="cover">
+           <h1>DEAL STORE | ADMIN</h1>
+           <p class="content">Deal Store Is A Market place to connect buyers and sellers within afe babalola university.</p>
+           <p class="content">As an admin in deal store, you can register and display your products to reach others using our fully responsive website</p>
+           <p class="content">Click the button below to join and start reaching sellers in no time.</p>
+         </div>
+
+         <button class="btn-btn">   <a href="/login">Login</a> </button>
+         <br>
+         <br>
+         <button class="btn-btn"> <a href="/register">Creat Account</a> </button>
+
+         <div class="right-cover">
+         
+          <img src="" alt="">
+          
+         </div>
+       </div>
+
+
+
+<!--
+
     <ul class="nav">
       <li>
         <a href="/login">Login</a>
@@ -32,5 +141,7 @@
       </li>
     </ul>
     <h3>This is the Landing Page of The Website</h3>
+  -->
+
   </body>
 </html>
