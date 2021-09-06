@@ -46,4 +46,4 @@ app.get("/dashboard", isAuth, appController.dashboard_get);
 
 app.post("/logout", appController.logout_post);
 
-app.listen(PORT, console.log("App Running on http://localhost:5000"));
+app.listen(PORT, () => console.log("App Running on http://localhost:5000"));
