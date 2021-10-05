@@ -10,6 +10,11 @@
   "keywords": [],
   "author": "DealStore",
   "license": "ISC",
+
+  "engines": {
+    "node": "16.5.0",
+    "npm": "7.24.0"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
